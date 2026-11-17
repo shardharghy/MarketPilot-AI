@@ -1,0 +1,38 @@
+# ── Environment ──────────────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+.venv312/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── Generated outputs (do not commit images or campaign data) ─────────────────
+outputs/images/*.png
+
+# ── Campaign history (contains real API outputs; commit separately if desired) ─
+data/campaigns/*.json
+
+# ── Test / coverage ──────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# Local workflow backup
+core/workflow_backup.py
